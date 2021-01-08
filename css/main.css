@@ -1,0 +1,541 @@
+
+ /* Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+
+body {
+  font-family: Averta-Regular, Avenir, Helvetica Neue, Calibri, Helvetica, Roboto, sans-serif;
+  font-size: 16px;
+}
+
+/*====== Navbar Desktop =====*/
+.rover-header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.rover-header-left img {
+  width: 100px;
+  height: 60px;
+}
+.rover-header-left a, .rover-header-right a {
+  color: #66727c;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1rem;
+}
+.rover-header-left {
+  display: flex;
+}
+.option {
+  margin-top: 22px;
+}
+
+/*============== Container ===============*/
+.rover-hero-container {
+  background: url("../img/banner.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rover-hreo-text {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  font-weight: 900;
+  margin-left: 60px;
+  background: rgb(0, 0, 0, 0.4);
+  text-align: center;
+}
+.rover-hreo-text h1 {
+  font-size: 2.7rem;
+  font-family: 'Kaushan Script', cursive;
+  margin-top: 30%;
+  text-align: center;
+  color: #ffbb43;
+}
+.rover-hreo-text p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  font-family: 'Kaushan Script', cursive;
+  color: #FFF0D7;
+}
+button {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #14a96d;
+  border-radius: 4px;
+  border: 0px;
+  padding: 20px 90px 20px 90px;
+}
+button:hover {
+  background-color: #b6e9d1;
+  color: white;
+  transition-duration: 0.7s;
+}
+/*============== Text below the Container ===============*/
+
+.rover-services {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+/*============== Middle Section contain right and left ===============*/
+
+.rover-middle-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+/*============== Left Side of Middle Section ===============*/
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  margin: 10px;
+}
+.item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.details h3 {
+  color: #1b1f23;
+  font-family: verta-Regular, Avenir, Helvetica Neue, Calibri, Helvetica, Roboto, sans-serif;
+  font-size: 0.9rem;
+}
+.details p {
+  color: #66727c;
+}
+/*============== Right Side of Middle Section ===============*/
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+}
+.title-box {
+  background: #f4f5f6;
+  border-color: #cfd7de;
+  border: 1px solid #cfd7de;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.content-box {
+  padding: 20px;
+  color: #1b1f23;
+  border: 1px solid #cfd7de;
+  width: 100%;
+}
+.in-div { /*== Button of Right Section ======*/
+  padding: 8px 15px;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.bottom-div { /*=== text bottom of table ===*/
+  text-align: center;
+  color: #1B1F25;
+  line-height: 1.6;
+  width: 500px;
+}
+a {
+  color: #06748a;
+}
+a:hover {
+  background: #b6e9d1;
+  transition: .7s;
+}
+/*============== Third Section ===============*/
+
+.third {
+  height: 500px;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  margin-top: 90px;
+}
+.rover-third-section {
+  background-image: url("https://www.rover.com/static/dist/a16f802b037458af3bbab4db5bd3f93e.jpg");
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.rover-quote {
+  font-size: 26px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+.quote {
+  width: 300px;
+  height: 310px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #cfd7de;
+  right: 55%;
+  top: -10%;
+  position: absolute;
+}
+.dash {
+  width: 40px;
+  height: 2px;
+  background-color: #14a96d;
+  margin: 0 0 20px;
+  border-top: 2px solid white;
+}
+.location {
+  background: rgb(0, 0, 0, 0.5);
+  color: white;
+  right: 3%;
+  bottom: 6%;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 5px;
+  position: absolute;
+}
+.head-rover {
+  text-align: center;
+  margin: 80px 0px 30px 0px;
+}
+.rover-final {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+.indv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 40px;
+}
+.indv-img img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.services-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.services-desc {
+  color: #66727c;
+  text-align: center;
+  line-height: 1.6;
+}
+/*======== Mobile Header ========*/
+
+.in-mobile-container {
+  display: none;
+}
+.in-mobile-container h3 {
+  color: black;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.in-mobile-container button {
+  background: linear-gradient(180deg, #178c5f, #207e4f);
+  font-weight: 600;
+  width: 100%;
+  padding: 8px 15px 8px 15px;
+  font-size: 16px;
+  text-align: center;
+}
+.in-mobile2 {
+  display: none;
+}
+.item1 img {
+  width: 200px;
+  height: 200px;
+}
+/*======== MOBILE NAVBAR =========*/
+
+.in-mobile-navBar {
+  display: none;
+}
+/*======================******** MEDIA *********=================================*/
+
+@media (max-width:660px) {
+  .rover-header-container {
+    display: none;
+  }
+  .in-mobile-navBar {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 14%;
+  }
+  .in-mobile-navBar img {
+    display: inline-block;
+    margin-left: 0px;
+  }
+  .main-nav {
+    display: none;
+    background: white;
+    margin-left: 5%;
+  }
+  .main-nav a {
+    text-align: center;
+    margin: 15px auto;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 3;
+    color: #A1A1A1;
+    font-weight: bold;
+    font-family: monospace;
+  }
+  .navbar-toggle {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    color: #14a96d;
+    font-size: 30px;
+  }
+  .active {
+    display: block;
+  }
+  .rover-hero-container {
+    display: none;
+  }
+ 
+  .in-mobile-container {
+    display: block;
+    margin-left: 5%;
+  }
+  .in-mobile-container button {
+    margin-bottom: 7%;
+    font-family: monospace;
+  }
+
+  .rover-services {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 6%;
+    margin-bottom: 0%;
+    margin-top: 2%;
+    border-bottom: 3px solid #caddddee;
+    font-family: monospace;
+    line-height: 0;
+    color: #A1A1A1;
+  }
+  /*============== 2 PICES =================*/
+  .in-mobile2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3px;
+    margin-bottom: 20px;
+    margin-top:4%;
+    margin-right: 0px;
+  }
+  /*========= Middle section Facts ans table =========*/
+  .rover-middle-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+  }
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .item {
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .item img {
+    width: 50px;
+    height: 50px;
+  }
+  .details h3 {
+    color: #1b1f23;
+    font-family: verta-Regular, Avenir, Helvetica Neue, Calibri, Helvetica, Roboto, sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+  }
+  .details p {
+    color: #66727c;
+    margin-top: 5px;
+  }
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bottom-div {
+    text-align: center;
+    color: #1B1F25;
+    line-height: 1.6;
+    width: 100%;
+  }
+  /*============== Third section Women carry dogs =================*/
+  .third {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    margin-top: 40%;
+  }
+  .rover-third-section {
+    background-image: url("https://www.rover.com/static/dist/a16f802b037458af3bbab4db5bd3f93e.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .rover-quote {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+  }
+  .quote {
+    width: auto;
+    height: 150px;
+    position: absolute;
+    background: white;
+    border: 1px solid #cfd7de;
+    top: -140px;
+    left: 0px;
+    right: 0px;
+  }
+  .dash {
+    width: 40px;
+    height: 2px;
+    background-color: #14a96d;
+    margin: 0 0 20px;
+    border-top: 2px solid white;
+  }
+  .location {
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    right: 28%;
+    bottom: 7%;
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  /*============= Last Title =================*/
+  .head-rover {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 6%;
+  }
+  .rover-final {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 50px 10px;
+  }
+  .indv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+  .indv-img img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .services-name {
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+  }
+  .services-desc {
+    color: #66727c;
+    text-align: left;
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  html {
+    margin: 0px;
+  }
+} /* END MOBILE MEDIA QUERY*/
+
+/* CSS for Model Window */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #14a96d;
+  width: 50%;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-content h3 {
+  text-align:center;
+  font-size:20px;
+  border-bottom:solid 3px #14a96d;
+  padding-bottom: 10px;
+  font-weight: 900;
+  color:#66727c;
+}
+
+input[type=Submit] {
+  width: 70%;
+  background-color: #14a96d;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 10px;
+  border-color: #cfd7de;
+  margin-left: 15%;
+}
+
+input[type=Submit]:hover {
+  background: #b6e9d1;
+}
+input[type=text] {
+  width: 50%;
+  border-radius: 7px;
+  padding: 10px;
+  text-align: center;
+  border-color: #cfd7de;
+}
+label {
+  font-weight: bold;
+  text-align: left;
+  margin-right: 10px;
+  color: #66727c;
+}
